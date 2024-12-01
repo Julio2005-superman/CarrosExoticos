@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap_folders/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Carros Exóticos</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mt-1" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#"> Hidden brand</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Home.html"><i class="fa fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-cloud"></i> Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Productos.html"><i class="fa fa-car"></i> Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-phone"></i> Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-user"></i> Usuarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-heart"></i> Acerca de</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-outline-success" type="submit"> Inicio </button>
+                        <button class="btn btn-outline-success" type="submit"> Registro </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Botón para agregar un nuevo producto -->
+        <div class="container mt-4 text-end">
+            <a href="FormProductos.html" class="btn btn-primary mb-3"><i class="fa fa-plus"></i> Agregar Producto</a>
+        </div>
+
+        <div class="container">
+            <h2 class="text-center mb-4">Productos</h2>
+            <table class="table table-bordered table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="imgs/FerrariSF90Stradale.jpg" class="img-fluid" alt="Producto 1" width="100"></td>
+                        <td>El SF90 Stradale es un superdeportivo híbrido enchufable de Ferrari...</td>
+                        <td>$650,000 dólares</td>
+                        <td class="text-center">
+                            <div class="btn-group-vertical" role="group">
+                                <button class="btn btn-primary mb-2">Seleccionar</button>
+                                <button class="btn btn-success mb-2">Comprar</button>
+                                <button class="btn btn-info mb-2">Ver</button>
+                                <button class="btn btn-danger mb-2">Eliminar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/Porsche911GT3.jpg" class="img-fluid" alt="Producto 2" width="100"></td>
+                        <td>Este modelo de la icónica serie 911 presenta un motor atmosférico...</td>
+                        <td>$3,628,000</td>
+                        <td class="text-center">
+                            <div class="btn-group-vertical" role="group">
+                                <button class="btn btn-primary mb-2">Seleccionar</button>
+                                <button class="btn btn-success mb-2">Comprar</button>
+                                <button class="btn btn-info mb-2">Ver</button>
+                                <button class="btn btn-danger mb-2">Eliminar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/LamborghiniAventadorSVJ.jpg" class="img-fluid" alt="Producto 3" width="100"></td>
+                        <td>El Aventador SVJ es una bestia de Lamborghini con un motor V12...</td>
+                        <td>$11 millones de pesos</td>
+                        <td class="text-center">
+                            <div class="btn-group-vertical" role="group">
+                                <button class="btn btn-primary mb-2">Seleccionar</button>
+                                <button class="btn btn-success mb-2">Comprar</button>
+                                <button class="btn btn-info mb-2">Ver</button>
+                                <button class="btn btn-danger mb-2">Eliminar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/McLarenP1.jpg" class="img-fluid" alt="Producto 4" width="100"></td>
+                        <td>El McLaren P1 es un superdeportivo híbrido con un motor V8 biturbo...</td>
+                        <td>1 300 000 €</td>
+                        <td class="text-center">
+                            <div class="btn-group-vertical" role="group">
+                                <button class="btn btn-primary mb-2">Seleccionar</button>
+                                <button class="btn btn-success mb-2">Comprar</button>
+                                <button class="btn btn-info mb-2">Ver</button>
+                                <button class="btn btn-danger mb-2">Eliminar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Add more products as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="bootstrap_folders/js/bootstrap.min.js "></script>
+</body>
+</html>
